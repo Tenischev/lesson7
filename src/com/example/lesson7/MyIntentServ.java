@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MyIntentServ extends IntentService{
-    private static final int REFRESH = 10 * 60 * 1000; //10 minutes
     public static ArrayList<RSSItem> rssItems = new ArrayList<RSSItem>();
     protected String chanel = "";
 

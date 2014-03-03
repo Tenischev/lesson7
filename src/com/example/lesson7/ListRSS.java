@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import com.example.lesson6.R;
 
 import java.util.ArrayList;
 
@@ -83,6 +82,7 @@ public class ListRSS extends Activity {
     public static void refreshList(Activity activity) {
         DbListRSS dbList = new DbListRSS(activity);
         SQLiteDatabase db = dbList.getReadableDatabase();
+        dbList.onCreate(db);
         Cursor cursor = db.rawQuery("SELECT * FROM " + DbListRSS.TABLE_NAME,null);
         cursor.moveToFirst();
         rssURL.clear();

@@ -7,25 +7,25 @@
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <service android:name="com.example.lesson7.MyIntentServ" />
         <activity android:name="com.example.lesson7.MyActivity"
-                  android:label="RSS">
+                  android:label="RSS" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.lesson7.RSSItemDisplayer" android:label="News">
+        <activity android:name="com.example.lesson7.RSSItemDisplayer" android:label="News" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.displayRssItem"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.lesson7.ListRSS" android:label="List Rss">
+        <activity android:name="com.example.lesson7.ListRSS" android:label="List Rss" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.listRss"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.lesson7.AddRSSToList" android:label="Add chanel">
+        <activity android:name="com.example.lesson7.AddRSSToList" android:label="Add chanel" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.listRss"/>
                 <category android:name="android.intent.category.DEFAULT"/>
